@@ -3,6 +3,10 @@ Project for music genre classification for datamining
 
 
 ## [Yajie Hu and Mitsunori Ogihara Million Song Dataset Genre Tags](http://web.cs.miami.edu/home/yajiehu/resource/genre/) ##
+### General ###
+
+This genre tag is added to a tab delemeted file that is a 1% subset of the dataset in the file combined.txt. This is a good place to start testing classification algorithms.
+
 ### Possible Genres ###
 - Blues
 - Country
