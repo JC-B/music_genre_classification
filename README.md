@@ -1,4 +1,4 @@
-# music_cenre_classification
+# music_genre_classification
 Project for music genre classification for datamining
 
 
