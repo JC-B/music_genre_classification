@@ -36,7 +36,7 @@ classification/svm.py
 ---------------------
 ### Prereqs ###
 You need to have the follow libraries installed:
-- scipy
+- sklearn
 - panda
 - numpy
 
