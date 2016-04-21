@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+
+import subprocess
 import csv
 import sys
 COLUMNSTOREMOVE = [
@@ -32,3 +35,5 @@ with open(sys.argv[1]) as infile, open(sys.argv[2], "wb") as outfile:
     w.writerow(firstrow)
     for row in r:
         w.writerow(row)
+
+subprocess.call(['sed','-i','/None$/d',sys.argv[2]])
