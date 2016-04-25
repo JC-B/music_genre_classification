@@ -82,7 +82,7 @@ def processData(file):
 
 
 if __name__ == "__main__":
-    file          = list(csv.reader(open("../out222.csv",'rb'),delimiter='|'))[1:]
+    file          = list(csv.reader(open("out3.csv",'rb'),delimiter='|'))[1:]
     processedData = processData(file) #(X,Y)
     X_train, X_test, y_train, y_test = train_test_split(processedData[0], processedData[1], test_size=.25)
 
@@ -111,7 +111,7 @@ if __name__ == "__main__":
 #    print model_tuner.best_params_
 
 #This is the application of the results from above
-    anova_filter = SelectKBest(f_regression, k=5)
+    anova_filter = SelectKBest(f_regression, k=2)
 #    X_train = CCA(n_components=38).fit(X_train,y_train).transform(X_train)
 #    X_train = PCA(n_components=38).fit_transform(X_train)
     svr = OneVsRestClassifier(SVR(kernel='rbf',C=10,epsilon=.01,gamma=.01),n_jobs=-1)
