@@ -17,6 +17,12 @@ song_file = open('entire_dup.txt','r')
 print("Reading in songs and combining with genres...")
 for line in song_file:
     data = line.split('|')
+
+song_file = open('songs.txt','r')
+
+print("Reading in songs and combining with genres...")
+for line in song_file:
+    data = line.split('\t')
     for attribute in data:
         attribute.strip()
     try:
