@@ -1,0 +1,23 @@
+## Music Genre Classification Project Files ##
+
+Thomas Lillis 4502
+Joseph Marylander 4502
+Connor McGuinness 4502
+
+Project is on github at https://github.com/tlillis/music_genre_classification
+
+The folders of this project are split into two groups with subfolders: 
+-classification: All files used for classification
+--svm: Files used for SVM classification
+--knn: Files used for KNN classification
+-helpers: All the files used for aggregation/cleaning/collection
+--general: Other files for doing general tasks on data
+---attach.py: python script that is used to attach genres to songs after aggregation
+---cleanCSV.py: python script used to clean the final CSV file
+--server: Files used for tasks on server
+---collect.sh: Script to collect all the data from multiple aggregation scripts into one single file
+---get_info.sh: Script to collect statistics from aggregation scripts running in parallel
+---p_aggregate.sh: Script meant for collecting data from h5 files in parallel
+---aggregate_large.sh: Script for collecting data from all h5 files not in parallel
+--subset: Files used to work on subset
+---aggregate_small.sh: Script for collecting data from h5 files from the subset

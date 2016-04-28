@@ -4,6 +4,6 @@
 
 for i in $(find /mnt/snap/data -name "all.txt" -type f); do
       cat $i >> entire.txt
-      echo "poop" >> entire.txt
+      echo "" >> entire.txt
 done
 
