@@ -30,8 +30,6 @@ from sklearn.pipeline import Pipeline
 from sklearn.pipeline import make_pipeline
 from sklearn.metrics import f1_score
 
-from operator import itemgetter
-
 GENRES = {
     "Blues"              :0.,
     "Country"            :1.,
@@ -84,7 +82,7 @@ def processData(file):
 
 
 if __name__ == "__main__":
-    file          = list(csv.reader(open("out5.csv",'rb'),delimiter='|'))[1:]
+    file          = list(csv.reader(open("out2.csv",'rb'),delimiter='|'))[1:]
     processedData = processData(file) #(X,Y)
     X_train, X_test, y_train, y_test = train_test_split(processedData[0], processedData[1], test_size=.25)
 
@@ -92,7 +90,7 @@ if __name__ == "__main__":
 
 
 #This is to figure out what parameters are the best
-
+#    anova_filter = SelectKBest(f_regression, k=2)
 #    svr = OneVsRestClassifier(SVR(kernel='rbf'))
 #    pipeline = Pipeline([
 #        ("anova",anova_filter),
@@ -112,9 +110,23 @@ if __name__ == "__main__":
 #    print model_tuner.best_score_
 #    print model_tuner.best_params_
 
+#This is the application of the results from above
+    anova_filter = SelectKBest(f_regression, k=2)
+#    X_train = CCA(n_components=38).fit(X_train,y_train).transform(X_train)
+#    X_train = PCA(n_components=38).fit_transform(X_train)
+    onevsrest = OneVsRestClassifier(SVR(kernel='rbf',C=10,epsilon=.01,gamma=.01),n_jobs=-1)
+    onevsone = OneVsOneClassifier(SVR(kernel='rbf',C=10,epsilon=.01,gamma=.01),n_jobs=-1)
+
+    X_train = anova_filter.fit_transform(X_train,y_train)
 
 
-    X = SelectKBest(f_regression, k=2).fit_transform(X_train,y_train)
+
+
+
+
+
+
+    X = X_train
     y = y_train
 
     h = .02  # step size in the mesh
@@ -126,16 +138,16 @@ if __name__ == "__main__":
                          np.arange(y_min, y_max, h))
 
     # title for the plots
-    titles = ["Final SVM classifier"]
+    titles = ['OneVsOneClassifier','OneVsRestClassifier']
 
 
-    for i in titles:
+    for i, clf in enumerate((onevsone,onevsrest)):
         # Plot the decision boundary. For that, we will assign a color to each
         # point in the mesh [x_min, m_max]x[y_min, y_max].
-        plt.subplot(2, 2, 1)
+        plt.subplot(2, 2, i + 1)
         plt.subplots_adjust(wspace=0.4, hspace=0.4)
 
-        Z = np.array(map(lambda x: float(x[-4:-1]),list(open("results.txt","rb")))[:-1])
+        Z = clf.predict(np.c_[xx.ravel(), yy.ravel()])
 
         # Put the result into a color plot
         Z = Z.reshape(xx.shape)
@@ -149,6 +161,6 @@ if __name__ == "__main__":
         plt.ylim(yy.min(), yy.max())
         plt.xticks(())
         plt.yticks(())
-        plt.title(i)
+        plt.title(titles[i])
 
     plt.show()
