@@ -18,6 +18,7 @@ The folders of this project are split into two groups with subfolders:
 ---collect.sh: Script to collect all the data from multiple aggregation scripts into one single file
 ---get_info.sh: Script to collect statistics from aggregation scripts running in parallel
 ---p_aggregate.sh: Script meant for collecting data from h5 files in parallel
+---parallelize.sh: Script to run the parallel instances of the p_aggregate.sh script
 ---aggregate_large.sh: Script for collecting data from all h5 files not in parallel
 --subset: Files used to work on subset
 ---aggregate_small.sh: Script for collecting data from h5 files from the subset
