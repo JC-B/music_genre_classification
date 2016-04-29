@@ -9,6 +9,16 @@ Project is on github at https://github.com/tlillis/music_genre_classification
 The folders of this project are split into two groups with subfolders: 
 -classification: All files used for classification
 --svm: Files used for SVM classification
+---figure_1.png: comparison of the OnevsOneClassifier and the OnevsRestClassifier
+---figure_2.png: comparison of  SVR and SVC 
+---figure_3.png: confusion matrix of our final classifier viusalized with a bubble chart
+---figure_4.png: confusion matrix of our final classifier visualized with a matrix
+---figure_5.png: confusion matrix of our final classifier without Pop/Rock data points
+---rawClassificationResults_smallDataSet.txt: This is the sample dataset used in testing our algorithm
+---rawClassificationResults_smallDataSetWithoutPopRock.txt: This is a modified dataset used to demonstrate how removing the Pop/Rock class affects the classifier
+---rawClassificationResults_largeDataSet.txt: This is the large dataset used in our final classifier 
+---svm.py: This is the actually classification script used to assign genre labels to songs.
+---svmGraphs.py: This script is what we used to generate our plots that show the regions bounded by each class.
 --knn: Files used for KNN classification
 -helpers: All the files used for aggregation/cleaning/collection
 --general: Other files for doing general tasks on data
