@@ -31,6 +31,7 @@ The folders of this project are split into two groups with subfolders:
   general: Other files for doing general tasks on data
     attach.py: python script that is used to attach genres to songs after aggregation
     cleanCSV.py: python script used to clean the final CSV file
+    display_song.py: MSongsDB python script for getting genre attributes
   server: Files used for tasks on server
     collect.sh: Script to collect all the data from multiple aggregation scripts into one single file
     get_info.sh: Script to collect statistics from aggregation scripts running in parallel
