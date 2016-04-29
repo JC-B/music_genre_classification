@@ -35,9 +35,21 @@ Add all column names you want to prune to the array in cleanCSV.py
 classification/svm.py
 ---------------------
 ### Prereqs ###
-You need to have the follow libraries installed:
+You need to have the following libraries installed:
 - sklearn
 - numpy
 
-### How to run###
-`python classification/svm.py`
+### How to run ###
+`python classification/svm/svm.py`
+
+classification/neighbor.py
+---------------------
+### Prereqs ###
+You need to have the following libraries installed:
+- sklearn
+- pandas
+
+### How to run ###
+`python classification/knn/neighbor.py`
+
+- change the input file to change the dataset.
