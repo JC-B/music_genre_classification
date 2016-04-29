@@ -1,0 +1,49 @@
+fe78249,Connor McGuinness,54 minutes ago,updated Readme and the doc
+8588199,jmarylander,60 minutes ago,Updated submission/README for knn
+cc01822,Connor McGuinness,62 minutes ago,added work contributions
+7a18c06,Joseph Marylander,3 hours ago,added svm info to submission
+fdd43fc,jmarylander,5 hours ago,Updated format in final document
+8ce4065,Connor McGuinness,5 hours ago,added confusion matrix for knn; added code for knn;
+8d5bb3f,Connor McGuinness,5 hours ago,fixing version errors with classification/svmgraphs and submission/classification/svmgraphs
+57810b7,Tom Lillis,8 hours ago,added missing file
+7f7964d,Tom Lillis,8 hours ago,updated submission
+add943d,jmarylander,21 hours ago,Updated Final document
+bed2b8f,jmarylander,30 hours ago,Update README.md
+f0ef335,Tom Lillis,2 days ago,report
+f8f1e00,Tom Lillis,2 days ago,created README for submission
+2e966ab,Tom Lillis,2 days ago,cleaned
+9542011,Tom Lillis,2 days ago,fixed naming
+3edeea1,Tom Lillis,2 days ago,added submission folder
+952881f,Tom,2 days ago,fixed naming issue
+f5adb75,Tom,2 days ago,fixed merge conflict
+2981c3b,Tom,2 days ago,fixed large file problem
+133be28,Tom,2 days ago,updates from server
+3385637,Tom,2 days ago,Merge branch 'master' of https://github.com/tlillis/music_genre_classification
+cdda060,Joseph Marylander,3 days ago,added smaller dataset
+9a631d3,Joseph Marylander,3 days ago,added smaller dataset
+4f99be3,Joseph Marylander,4 days ago,svm classification without rock/pop due to their ubiquity
+f7fe5fd,Joseph Marylander,4 days ago,svm classification without rock/pop due to their ubiquity
+cc88ab2,Joseph Marylander,4 days ago,svm classification without rock/pop due to their ubiquity
+7d4086e,Joseph Marylander,4 days ago,svm classification without rock/pop due to their ubiquity
+1684575,Ubuntu,4 days ago,combined all pipe sperated files
+c8140a5,Joseph Marylander,7 days ago,Added optimizations to svm classifier and modifications to cleanCSV.py
+ccc8720,Joseph Marylander,7 days ago,Added optimizations to svm classifier and modifications to cleanCSV.py
+6887a68,jmarylander,4 weeks ago,fixed typo in readme
+9e0f967,jmarylander,4 weeks ago,fixed typo in readme
+0f78c79,jmarylander,4 weeks ago,Delete xcopy
+39132c4,jmarylander,4 weeks ago,Delete xcopy
+c1bd90a,jmarylander,4 weeks ago,Update README.md
+ec54f59,jmarylander,4 weeks ago,Update README.md
+e237a65,Tom Lillis,4 weeks ago,added checkpoint document
+1e3fa56,Tom Lillis,4 weeks ago,added checkpoint document
+a22592d,Joseph Marylander,4 weeks ago,Added csv cleaner and svm base classifier
+b6a3dec,Joseph Marylander,4 weeks ago,Added csv cleaner and svm base classifier
+37b2d8c,Tom Lillis,4 weeks ago,Merge branch 'master' of https://github.com/tlillis/music_cenre_classification
+97e3eff,Tom Lillis,4 weeks ago,Merge branch 'master' of https://github.com/tlillis/music_cenre_classification
+2c8cdcd,Tom Lillis,4 weeks ago,naming changed
+028af4d,Tom Lillis,4 weeks ago,naming changed
+342481f,Thomas Lillis,4 weeks ago,stupid spelling mistake
+d31a774,Thomas Lillis,4 weeks ago,stupid spelling mistake
+900e372,Tom Lillis,4 weeks ago,correct file with genre tags
+68776d2,Tom Lillis,4 weeks ago,correct file with genre tags
+e115eb4,Tom Lillis,4 weeks ago,working aggrigation script

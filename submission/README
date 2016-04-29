@@ -7,30 +7,46 @@ Connor McGuinness 4502
 Project is on github at https://github.com/tlillis/music_genre_classification
 
 The folders of this project are split into two groups with subfolders: 
+
+-commitLog.csv: A log of all of our activity on the project via a log of all commits to the repo via  a log of all commits to the repo
 -classification: All files used for classification
---svm: Files used for SVM classification
----figure_1.png: comparison of the OnevsOneClassifier and the OnevsRestClassifier
----figure_2.png: comparison of  SVR and SVC 
----figure_3.png: confusion matrix of our final classifier viusalized with a bubble chart
----figure_4.png: confusion matrix of our final classifier visualized with a matrix
----figure_5.png: confusion matrix of our final classifier without Pop/Rock data points
----rawClassificationResults_smallDataSet.txt: This is the sample dataset used in testing our algorithm
----rawClassificationResults_smallDataSetWithoutPopRock.txt: This is a modified dataset used to demonstrate how removing the Pop/Rock class affects the classifier
----rawClassificationResults_largeDataSet.txt: This is the large dataset used in our final classifier 
----svm.py: This is the actually classification script used to assign genres to songs.
----svmGraphs.py: This script is what we used to generate our plots that show the regions bounded by each class.
---knn: Files used for KNN classification
----csvTrainer.py: This script loads up our dataset using pandas and returns the data for use in another program
----neighbor.py: This script implements k-nearest-neighbores using pandas to assign genres to songs.
+  svm: Files used for SVM classification
+    figure_1.png: comparison of the OnevsOneClassifier and the OnevsRestClassifier
+    figure_2.png: comparison of  SVR and SVC 
+    figure_3.png: confusion matrix of our final classifier viusalized with a bubble chart
+    figure_4.png: confusion matrix of our final classifier visualized with a matrix
+    figure_5.png: confusion matrix of our final classifier without Pop/Rock data points
+    rawClassificationResults_smallDataSet.txt: This is the results from running our classifier against a small sample dataset used for testing.
+    rawClassificationResults_smallDataSetWithoutPopRock.txt: This is the results from running our final classifier against a modified dataset used to demonstrate how removing the Pop/Rock class affects the classifier
+    rawClassificationResults_largeDataSet.txt: This is the results from running our final classifier against the large dataset.
+    svm.py: This is the actually classification script used to assign genres to songs.
+    svmGraphs.py: This script is what we used to generate our plots that show the regions bounded by each class.
+  knn: Files used for KNN classification
+    csvTrainer.py: This script loads up our dataset using pandas and returns the data for use in another program
+    neighbor.py: This script implements k-nearest-neighbores using pandas to assign genres to songs.
+    results.txt: This is the results from our final knn classifier 
+    figure_8.png: confusion matrix of our final knn classifier visualized with a matrix
+
 -helpers: All the files used for aggregation/cleaning/collection
---general: Other files for doing general tasks on data
----attach.py: python script that is used to attach genres to songs after aggregation
----cleanCSV.py: python script used to clean the final CSV file
---server: Files used for tasks on server
----collect.sh: Script to collect all the data from multiple aggregation scripts into one single file
----get_info.sh: Script to collect statistics from aggregation scripts running in parallel
----p_aggregate.sh: Script meant for collecting data from h5 files in parallel
----parallelize.sh: Script to run the parallel instances of the p_aggregate.sh script
----aggregate_large.sh: Script for collecting data from all h5 files not in parallel
---subset: Files used to work on subset
----aggregate_small.sh: Script for collecting data from h5 files from the subset
+  general: Other files for doing general tasks on data
+    attach.py: python script that is used to attach genres to songs after aggregation
+    cleanCSV.py: python script used to clean the final CSV file
+  server: Files used for tasks on server
+    collect.sh: Script to collect all the data from multiple aggregation scripts into one single file
+    get_info.sh: Script to collect statistics from aggregation scripts running in parallel
+    p_aggregate.sh: Script meant for collecting data from h5 files in parallel
+    parallelize.sh: Script to run the parallel instances of the p_aggregate.sh script
+    aggregate_large.sh: Script for collecting data from all h5 files not in parallel
+  subset: Files used to work on subset
+    aggregate_small.sh: Script for collecting data from h5 files from the subset
+
+Key results - Files of note:
+classification/svm/figure_[1-5].png
+classification/svm/rawClassificationResults_smallDataSet.txt
+classification/svm/rawClassificationResults_smallDataSetWithoutPopRock.txt
+classification/svm/rawClassificationResults_largeDataSet.txt
+classification/svm/screenshot_RunningNoPopRock.png
+classification/knn/results.txt
+classification/knn/figure_8.png
+classification/knn/screenshot_RunningWholeDataset.png
+commitLog.csv
