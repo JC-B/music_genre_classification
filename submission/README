@@ -17,9 +17,11 @@ The folders of this project are split into two groups with subfolders:
 ---rawClassificationResults_smallDataSet.txt: This is the sample dataset used in testing our algorithm
 ---rawClassificationResults_smallDataSetWithoutPopRock.txt: This is a modified dataset used to demonstrate how removing the Pop/Rock class affects the classifier
 ---rawClassificationResults_largeDataSet.txt: This is the large dataset used in our final classifier 
----svm.py: This is the actually classification script used to assign genre labels to songs.
+---svm.py: This is the actually classification script used to assign genres to songs.
 ---svmGraphs.py: This script is what we used to generate our plots that show the regions bounded by each class.
 --knn: Files used for KNN classification
+---csvTrainer.py: This script loads up our dataset using pandas and returns the data for use in another program
+---neighbor.py: This script implements k-nearest-neighbores using pandas to assign genres to songs.
 -helpers: All the files used for aggregation/cleaning/collection
 --general: Other files for doing general tasks on data
 ---attach.py: python script that is used to attach genres to songs after aggregation
